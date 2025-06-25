@@ -1,7 +1,7 @@
-use tracing::{Subscriber, dispatcher::set_global_default};
+use tracing::{dispatcher::set_global_default, Subscriber};
 use tracing_bunyan_formatter::{BunyanFormattingLayer, JsonStorageLayer};
 use tracing_log::LogTracer;
-use tracing_subscriber::{EnvFilter, Registry, fmt::MakeWriter, layer::SubscriberExt};
+use tracing_subscriber::{fmt::MakeWriter, layer::SubscriberExt, EnvFilter, Registry};
 
 pub fn get_subscriber<Sink>(
     name: String,
