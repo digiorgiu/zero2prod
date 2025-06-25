@@ -1,5 +1,29 @@
 {
   "db": "PostgreSQL",
+  "0171e031d885bc3f6eee647db00be5580733559ae49418f2f36390b4c4d802a0": {
+    "describe": {
+      "columns": [
+        {
+          "name": "email",
+          "ordinal": 0,
+          "type_info": "Text"
+        },
+        {
+          "name": "name",
+          "ordinal": 1,
+          "type_info": "Text"
+        }
+      ],
+      "nullable": [
+        false,
+        false
+      ],
+      "parameters": {
+        "Left": []
+      }
+    },
+    "query": "SELECT email,name FROM subscriptions"
+  },
   "bcfcfebc6f5e8ffbf97d97c5a209be78b46d703924482cf8b43842705fcb7714": {
     "describe": {
       "columns": [],
